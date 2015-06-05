@@ -1,5 +1,13 @@
 /**
  * Add a module for use with commonjs(WebPack)
+ */
+if (typeof module !== "undefined" && typeof exports !== "undefined" && module.exports ===
+  exports) {
+  module.exports = 'ngMap';
+}
+
+/**
+ * Add a module for use with commonjs(WebPack)
  * Add to your webpack.config.js with:
  * 
  module.exports = {
